@@ -2,13 +2,13 @@ import React from "react";
 import { useState, useEffect, useRef } from "react";
 import axios from "axios"
 import { useNavigate, useLocation } from "react-router-dom";
-// import Swal from 'sweetalert2';
+import Swal from 'sweetalert2';
 import EndPageDecor2 from "../src/pics/decor2.png";
 import "./EditMenu.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App"
 import "./components/Managetable"
-// import swal from 'sweetalert2';
+import swal from 'sweetalert2';
 
 
 const EditMenu = () => {
@@ -35,23 +35,23 @@ const EditMenu = () => {
                 .put("https://linemaew.onrender.com/api/menu/"+ id + "/edit", editedMenu)
                 .then(response => {
                     if (response.status === 200) {
-                        // Swal.fire({
-                        //     position: 'center',
-                        //     icon: 'success',
-                        //     title: 'The menu has been edited',
-                        //     showConfirmButton: false,
-                        //     timer: 1500
-                        // })
+                        Swal.fire({
+                            position: 'center',
+                            icon: 'success',
+                            title: 'The menu has been edited',
+                            showConfirmButton: false,
+                            timer: 1500
+                        })
                         navigate("/manage");
                     }
                 }).catch(err => {
-                    // Swal.fire('Some of your input is wrong. Please try again.')
+                    Swal.fire('Some of your input is wrong. Please try again.')
                     console.log(err)
                 })
         }
         else {
             console.log("กรอกข้อมูลไม่ครบ");
-            // Swal.fire('Please fill all the blanks')
+            Swal.fire('Please fill all the blanks')
         }
     }
 
