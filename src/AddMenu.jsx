@@ -7,6 +7,8 @@ import "./AddMenu.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App"
 import EndPageDecor2 from "../src/pics/decor2.png";
+import swal from 'sweetalert2';
+
 
 const AddMenu = () => {
     const menuName = useRef();

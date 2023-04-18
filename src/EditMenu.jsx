@@ -8,6 +8,8 @@ import "./EditMenu.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App"
 import "./components/Managetable"
+import swal from 'sweetalert2';
+
 
 const EditMenu = () => {
     const [editedMenu, setEditedMenu] = useState({ name: "", description: "", price: "" });

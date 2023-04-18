@@ -21,6 +21,8 @@ import { Routes, Route, Outlet, NavLink } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 import EditMenu from "../EditMenu";
 import Swal from 'sweetalert2';
+import swal from 'sweetalert2';
+
 
 const ManageTable = () => {
     const [menu, setMenu] = useState([])
