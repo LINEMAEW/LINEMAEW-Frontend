@@ -20,8 +20,8 @@ import EndPageDecor from "../pics/decor.png";
 import { Routes, Route, Outlet, NavLink } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 import EditMenu from "../EditMenu";
-import Swal from 'sweetalert2';
-import swal from 'sweetalert2';
+// import Swal from 'sweetalert2';
+// import swal from 'sweetalert2';
 
 
 const ManageTable = () => {
@@ -46,13 +46,13 @@ const ManageTable = () => {
             if (data.item_id != id) {
                 return true
             }
-            Swal.fire({
-                position: 'center',
-                icon: 'success',
-                title: 'The menu has been deleted',
-                showConfirmButton: false,
-                timer: 1500
-            })
+            // Swal.fire({
+            //     position: 'center',
+            //     icon: 'success',
+            //     title: 'The menu has been deleted',
+            //     showConfirmButton: false,
+            //     timer: 1500
+            // })
             return false
         })
         axios

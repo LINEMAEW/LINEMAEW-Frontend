@@ -2,12 +2,12 @@ import React from "react";
 import { useState, useEffect, useRef } from "react";
 import axios from "axios"
 import { useNavigate } from "react-router-dom";
-import Swal from 'sweetalert2';
+// import Swal from 'sweetalert2';
 import "./AddMenu.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App"
 import EndPageDecor2 from "../src/pics/decor2.png";
-import swal from 'sweetalert2';
+// import swal from 'sweetalert2';
 
 
 const AddMenu = () => {
@@ -28,25 +28,25 @@ const AddMenu = () => {
                 .then(response => {
                     // console.log(response)
                     if (response.status == 200) {
-                        Swal.fire({
-                            position: 'center',
-                            icon: 'success',
-                            title: 'New menu has been added',
-                            showConfirmButton: false,
-                            timer: 1500
-                        })
+                        // Swal.fire({
+                        //     position: 'center',
+                        //     icon: 'success',
+                        //     title: 'New menu has been added',
+                        //     showConfirmButton: false,
+                        //     timer: 1500
+                        // })
                         // console.log('go')
                         navigate("/manage");
                     }
                     
                 }).catch(err => {
-                    Swal.fire('Some of your input is wrong. Please try again.')
+                    // Swal.fire('Some of your input is wrong. Please try again.')
                     console.log(err)
                 })
         }
         else {
             console.log("กรอกข้อมูลไม่ครบ");
-            Swal.fire('Please fill all the blanks.')
+            // Swal.fire('Please fill all the blanks.')
         }
     }
     return (
