@@ -1,0 +1,56 @@
+.in-box {
+    border-style: solid;
+    border-color: #b6c471;
+    background-color: #b6c471;
+    border-radius: 1.5rem;
+    margin-top: 1%;
+    padding: 2%;
+    text-align: center; /* Center align the container */
+    display: flex;
+    flex-direction: column;
+}
+
+.in-box p {
+    text-align: left; /* Left align the title */
+}
+
+
+.input-dec {
+    border-radius: 1rem;
+    border-color: white;
+    height: 1cm;
+    font-size: 18px;
+    font-family: 'Gaegu', cursive;
+}
+
+.parent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.butt-add{
+    border-style: solid;
+    border-color: #FFCC00;
+    background-color: #FFCC00;
+    color: #E04C1B;
+    border-radius: 2em;
+    width: 5cm;
+    height: 1.5cm;
+    font-family: 'Gaegu', cursive;
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 2%;
+}
+
+.butt-add:hover {
+    box-shadow: 1px 1px 1px 1px #ffb300;
+    border-color: #ffb300;
+    transition: 0.2s;
+}
+
+.left-page-decor {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}

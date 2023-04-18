@@ -1,0 +1,14 @@
+.nav-dec{
+    border-style: solid;
+    border-color: #F49C63;
+    background-color:  #F49C63;
+    width: 17rem;
+    height: 2.5rem;
+}
+
+.rectangle {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    background: #F49C63;
+  }

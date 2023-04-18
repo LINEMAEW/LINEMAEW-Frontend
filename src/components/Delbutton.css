@@ -1,0 +1,15 @@
+.round-butt-del{
+    border-style: solid;
+    border-color: #F68C64;
+    background-color: #F68C64;
+    border-radius: 2em;
+    width: 1.8cm;
+    height: 0.7cm;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.round-butt-del:hover {
+    box-shadow: 1px 1px 1px 1px #f2794d;
+    transition: 0.2s;
+}

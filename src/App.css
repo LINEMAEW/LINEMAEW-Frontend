@@ -1,0 +1,112 @@
+.test{
+  color: black;
+}
+
+.app-bg{
+  background-color: aqua;
+}
+
+
+.rectangle {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  background: rgb(255, 165, 130);
+}
+
+/* (1) Change buttons (excluding active or disabled)*/
+.pagination>li>a {
+  background-color: #fda06d;
+  border-color: #F0F8FF;
+  color: #000000;
+}
+
+/* (2) Change disabled buttons*/
+.pagination>.disabled>a,
+.pagination>.disabled>a:hover,
+.pagination>.disabled>a:focus {
+  background-color: #b4b4b4;
+  border-color: #F0F8FF;
+  color: #000000;
+}
+
+/* (3) Change active or hover button color*/
+.pagination>.active>a,
+.pagination>.active>a:hover,
+.pagination>.active>a:focus,
+.pagination>li>a:hover,
+.pagination>li>a:focus {
+  background-color: #e48f62;
+  border-color: #F0F8FF;
+  color: #000000;
+}
+
+.manage-header{
+  text-align: left;
+  display: inline-block;
+}
+
+#root {
+  max-width: none;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  font-family: 'Lilita One', cursive;
+  background-color: #fff0d4;
+}
+
+#apppage .view {
+  /* background-image: url("https://mdbootstrap.com/img/Photos/Others/architecture.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  min-height: 100vh; */
+  background-color: #000000;
+}
+
+.add-button{
+  color:#000000;
+  border-style: solid;
+  border-color: #FFCC00;
+  background-color: #FFCC00;
+  border-radius: 2em;
+  width: 4.5cm;
+  height: 1cm;
+  font-weight: bold;
+  font-size: 18px;
+  font-family: 'Gaegu', cursive;
+  margin-bottom: 2%;
+}
+
+.add-button:hover {
+  background-color: #ffae00;
+  border-color: #fda06d;
+  transition: 0.7s;
+}
+
+.nav-bar-text {
+  color: #002F15
+}
+
+.nav-bar-text:hover {
+  color: #005627
+}
+
+.nav-bar-bg {
+  position: absolute;
+  top: -0.25cm;
+  right: -1cm;
+  background-color: #fda06d;
+  width: 12cm;
+  height: 10vh;
+  border-radius: 1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.end-page-decor {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}

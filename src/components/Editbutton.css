@@ -1,0 +1,15 @@
+.round-butt-edit{
+    border-style: solid;
+    border-color: #FFCC00;
+    background-color: #FFCC00;
+    border-radius: 2em;
+    width: 1.8cm;
+    height: 0.7cm;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.round-butt-edit:hover {
+    box-shadow: 1px 1px 1px 1px #ffb300;
+    transition: 0.2s;
+}
